@@ -1,0 +1,351 @@
+{
+  "info": {
+    "schema_version": "2.10",
+    "generated_at": "2026-11-02T09:18:00",
+    "classifier": null,
+    "catalog": null,
+    "offer_package": null,
+    "offer_package_changes": [],
+    "documents": [
+      {
+        "id": "order-77",
+        "number": "77",
+        "date": "2026-11-01",
+        "operation": "Заказ товара",
+        "role": "Продавец",
+        "currency": "RUB",
+        "rate": "1",
+        "amount": "1200",
+        "counterparties": [
+          {
+            "id": "buyer-org",
+            "name": "Покупатель-организация",
+            "official_name": "АО \"Тестовый покупатель\"",
+            "legal_address": {
+              "presentation": "000000, г. Примерный, пр. Тестовый, 2",
+              "comment": null,
+              "fields": []
+            },
+            "inn": "0000000001",
+            "kpp": "000000001",
+            "main_activity": null,
+            "egrpo": null,
+            "okved": "00.00",
+            "okdp": null,
+            "okopf": null,
+            "okfs": null,
+            "okpo": null,
+            "registration_date": null,
+            "head": {
+              "last_name": "Директоров",
+              "first_name": "Тест",
+              "middle_name": null,
+              "identity_document": null,
+              "registration_address": {
+                "presentation": "г. Примерный",
+                "comment": null,
+                "fields": []
+              },
+              "position": "Генеральный директор",
+              "contacts": []
+            },
+            "bank_accounts": [
+              {
+                "number": "00000000000000000000",
+                "bank": {
+                  "correspondent_account": "00000000000000000000",
+                  "name": "Тестовый банк",
+                  "address": null,
+                  "contacts": [],
+                  "bic": "000000000",
+                  "swift": null
+                },
+                "correspondent_bank": null,
+                "comment": null
+              }
+            ],
+            "full_name": null,
+            "salutation": null,
+            "last_name": null,
+            "first_name": null,
+            "middle_name": null,
+            "birth_date": null,
+            "birth_place": null,
+            "gender": null,
+            "identity_document": null,
+            "registration_address": null,
+            "organization": null,
+            "position": null,
+            "comment": null,
+            "address": null,
+            "contacts": [],
+            "representatives": [],
+            "role": "Покупатель",
+            "bank_account": null,
+            "warehouse": {
+              "id": "buyer-wh",
+              "name": "Склад покупателя",
+              "comment": null,
+              "address": null,
+              "contacts": [],
+              "deletion_mark": null,
+              "version": null,
+              "extra": []
+            },
+            "deletion_mark": null,
+            "version": null,
+            "extra": []
+          }
+        ],
+        "time": null,
+        "payment_due": "2026-11-10",
+        "comment": null,
+        "taxes": [
+          {
+            "tax": {
+              "name": "НДС",
+              "included_in_amount": true,
+              "excise": null
+            },
+            "amount": "200",
+            "rate": "20"
+          }
+        ],
+        "discounts": [],
+        "extra_charges": [
+          {
+            "name": "Упаковка",
+            "amount": "0",
+            "percent": "0",
+            "included_in_amount": null,
+            "comment": null
+          }
+        ],
+        "warehouses": [
+          {
+            "id": "wh-main",
+            "name": null,
+            "comment": null,
+            "address": null,
+            "contacts": [],
+            "deletion_mark": null,
+            "version": null,
+            "extra": []
+          }
+        ],
+        "items": [
+          {
+            "product": {
+              "id": "p-kit",
+              "barcode": null,
+              "article": null,
+              "name": "Комплект мебели",
+              "base_unit": null,
+              "counterparty_product_id": null,
+              "group_ids": [],
+              "category_id": null,
+              "description": null,
+              "pictures": [],
+              "country": null,
+              "trademark": null,
+              "trademark_owner": null,
+              "manufacturer": null,
+              "property_values": [],
+              "tax_rates": [],
+              "excises": [],
+              "components": [],
+              "analogs": [],
+              "characteristics": [],
+              "requisites": [],
+              "status": null,
+              "deletion_mark": null,
+              "version": null,
+              "weight": null,
+              "extra": []
+            },
+            "catalog_id": null,
+            "classifier_id": null,
+            "price_per_unit": "1200",
+            "quantity": "1",
+            "amount": "1200",
+            "unit": {
+              "unit": "704",
+              "coefficient": "1",
+              "extra_data": []
+            },
+            "country_of_origin": "РОССИЯ",
+            "customs_declaration": "00000000/000000/0000000",
+            "taxes": [
+              {
+                "tax": {
+                  "name": "НДС",
+                  "included_in_amount": null,
+                  "excise": null
+                },
+                "amount": "200",
+                "rate": "20"
+              }
+            ],
+            "discounts": [],
+            "extra_charges": [],
+            "additional_requisites": [
+              {
+                "name": "Сборка",
+                "values": [
+                  "Да"
+                ]
+              }
+            ],
+            "warehouses": [
+              {
+                "warehouse": {
+                  "id": "wh-main",
+                  "name": null,
+                  "comment": null,
+                  "address": null,
+                  "contacts": [],
+                  "deletion_mark": null,
+                  "version": null,
+                  "extra": []
+                },
+                "quantity": "1"
+              }
+            ]
+          }
+        ],
+        "requisites": [],
+        "signatories": [
+          {
+            "last_name": "Подписантов",
+            "first_name": "Тест",
+            "middle_name": null,
+            "salutation": null,
+            "identity_document": null,
+            "registration_address": null,
+            "workplace": {
+              "id": null,
+              "name": null,
+              "official_name": "ООО \"Тестовая организация\"",
+              "legal_address": null,
+              "inn": null,
+              "kpp": null,
+              "main_activity": null,
+              "egrpo": null,
+              "okved": null,
+              "okdp": null,
+              "okopf": null,
+              "okfs": null,
+              "okpo": null,
+              "registration_date": null,
+              "head": null,
+              "bank_accounts": [],
+              "full_name": null,
+              "salutation": null,
+              "last_name": null,
+              "first_name": null,
+              "middle_name": null,
+              "birth_date": null,
+              "birth_place": null,
+              "gender": null,
+              "identity_document": null,
+              "registration_address": null,
+              "organization": null,
+              "position": null,
+              "comment": null,
+              "address": null,
+              "contacts": [],
+              "representatives": [],
+              "role": null,
+              "bank_account": null,
+              "warehouse": null,
+              "deletion_mark": null,
+              "version": null,
+              "extra": []
+            },
+            "position": "Менеджер",
+            "comment": null
+          }
+        ],
+        "payments": [
+          {
+            "document_number": "77",
+            "transaction_number": "tx-0001",
+            "date": "2026-11-01T10:00:00",
+            "amount": "1200",
+            "method": "Банковская карта",
+            "method_id": null
+          }
+        ],
+        "subordinate_documents": [
+          {
+            "id": "payment-77",
+            "number": "П-77",
+            "date": "2026-11-01",
+            "operation": "Выплата безналичных денег",
+            "role": null,
+            "currency": null,
+            "rate": null,
+            "amount": "1200",
+            "counterparties": [],
+            "time": null,
+            "payment_due": null,
+            "comment": null,
+            "taxes": [],
+            "discounts": [],
+            "extra_charges": [],
+            "warehouses": [],
+            "items": [],
+            "requisites": [],
+            "signatories": [],
+            "payments": [],
+            "subordinate_documents": [],
+            "number_1c": null,
+            "date_1c": null,
+            "basis": null,
+            "deletion_mark": null,
+            "version": null,
+            "extra": []
+          },
+          {
+            "id": "shipment-77",
+            "number": "О-77",
+            "date": "2026-11-02",
+            "operation": "Отпуск товара",
+            "role": null,
+            "currency": null,
+            "rate": null,
+            "amount": null,
+            "counterparties": [],
+            "time": null,
+            "payment_due": null,
+            "comment": null,
+            "taxes": [],
+            "discounts": [],
+            "extra_charges": [],
+            "warehouses": [],
+            "items": [],
+            "requisites": [],
+            "signatories": [],
+            "payments": [],
+            "subordinate_documents": [],
+            "number_1c": null,
+            "date_1c": null,
+            "basis": null,
+            "deletion_mark": null,
+            "version": null,
+            "extra": []
+          }
+        ],
+        "number_1c": "ТД00-000077",
+        "date_1c": "2026-11-01",
+        "basis": null,
+        "deletion_mark": null,
+        "version": null,
+        "extra": []
+      }
+    ],
+    "counterparties": [],
+    "extra": []
+  },
+  "warnings": []
+}

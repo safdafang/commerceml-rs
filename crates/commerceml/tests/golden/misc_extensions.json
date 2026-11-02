@@ -1,0 +1,137 @@
+{
+  "info": {
+    "schema_version": "2.08",
+    "generated_at": "2026-11-02T09:19:00",
+    "classifier": null,
+    "catalog": null,
+    "offer_package": null,
+    "offer_package_changes": [
+      {
+        "id": "changes-1",
+        "catalog_id": "catalog-1",
+        "offers": [
+          {
+            "id": "p-chair",
+            "barcode": null,
+            "article": null,
+            "characteristic_id": "c-default",
+            "unit_code": "796",
+            "warehouse_stock": [
+              {
+                "warehouse_id": "wh-main",
+                "quantity": "5"
+              }
+            ],
+            "prices": [
+              {
+                "presentation": null,
+                "price_type_id": "price-retail",
+                "price_per_unit": "1399",
+                "currency": null,
+                "unit": {
+                  "unit": null,
+                  "coefficient": null,
+                  "extra_data": []
+                },
+                "min_quantity": null,
+                "catalog_id": null
+              }
+            ],
+            "quantity": "5",
+            "extra": []
+          }
+        ],
+        "changes_only": true,
+        "extra": []
+      }
+    ],
+    "documents": [
+      {
+        "id": "container-doc",
+        "number": "5",
+        "date": "2026-11-02",
+        "operation": "Заказ товара",
+        "role": "Продавец",
+        "currency": "RUB",
+        "rate": "1",
+        "amount": "0",
+        "counterparties": [],
+        "time": null,
+        "payment_due": null,
+        "comment": null,
+        "taxes": [],
+        "discounts": [],
+        "extra_charges": [],
+        "warehouses": [],
+        "items": [],
+        "requisites": [],
+        "signatories": [],
+        "payments": [],
+        "subordinate_documents": [],
+        "number_1c": null,
+        "date_1c": null,
+        "basis": "order-77",
+        "deletion_mark": null,
+        "version": null,
+        "extra": []
+      }
+    ],
+    "counterparties": [
+      {
+        "id": "customer-1",
+        "name": "Тест Тестов",
+        "official_name": null,
+        "legal_address": null,
+        "inn": null,
+        "kpp": null,
+        "main_activity": null,
+        "egrpo": null,
+        "okved": null,
+        "okdp": null,
+        "okopf": null,
+        "okfs": null,
+        "okpo": "00000000",
+        "registration_date": null,
+        "head": null,
+        "bank_accounts": [],
+        "full_name": "Тестов Тест Тестович",
+        "salutation": null,
+        "last_name": null,
+        "first_name": null,
+        "middle_name": null,
+        "birth_date": null,
+        "birth_place": null,
+        "gender": "М",
+        "identity_document": null,
+        "registration_address": null,
+        "organization": null,
+        "position": null,
+        "comment": null,
+        "address": null,
+        "contacts": [
+          {
+            "kind": "Почта",
+            "value": "customer@example.invalid",
+            "comment": null
+          }
+        ],
+        "representatives": [],
+        "role": "Покупатель",
+        "bank_account": null,
+        "warehouse": null,
+        "deletion_mark": false,
+        "version": "AAAAAgAAAAE=",
+        "extra": []
+      }
+    ],
+    "extra": [
+      {
+        "name": "ПользовательскиеСправочники",
+        "xml": "<ПользовательскиеСправочники>\n\t\t<Справочник>\n\t\t\t<Ид>ref-1</Ид>\n\t\t\t<Наименование>Бренды</Наименование>\n\t\t</Справочник>\n\t</ПользовательскиеСправочники>"
+      }
+    ]
+  },
+  "warnings": [
+    "unknown element <ПользовательскиеСправочники> at КоммерческаяИнформация/ПользовательскиеСправочники (line 55, column 2)"
+  ]
+}

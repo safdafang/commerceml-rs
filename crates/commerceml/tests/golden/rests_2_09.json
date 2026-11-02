@@ -1,0 +1,120 @@
+{
+  "info": {
+    "schema_version": "2.09",
+    "generated_at": "2026-11-02T09:17:00",
+    "classifier": null,
+    "catalog": null,
+    "offer_package": {
+      "id": "catalog-1#",
+      "name": "Пакет предложений (остатки)",
+      "catalog_id": "catalog-1",
+      "classifier_id": "11111111-0000-0000-0000-000000000001",
+      "valid_from": null,
+      "valid_to": null,
+      "description": null,
+      "owner": null,
+      "price_types_classifier_id": null,
+      "price_types": [],
+      "warehouses": [],
+      "property_values": [],
+      "offers": [
+        {
+          "product": {
+            "id": "p-chair",
+            "barcode": null,
+            "article": null,
+            "name": "",
+            "base_unit": null,
+            "counterparty_product_id": null,
+            "group_ids": [],
+            "category_id": null,
+            "description": null,
+            "pictures": [],
+            "country": null,
+            "trademark": null,
+            "trademark_owner": null,
+            "manufacturer": null,
+            "property_values": [],
+            "tax_rates": [],
+            "excises": [],
+            "components": [],
+            "analogs": [],
+            "characteristics": [],
+            "requisites": [],
+            "status": null,
+            "deletion_mark": null,
+            "version": null,
+            "weight": null,
+            "extra": []
+          },
+          "prices": [],
+          "quantity": null,
+          "warehouse_stock": [],
+          "rests": [
+            {
+              "quantity": null,
+              "warehouse": {
+                "warehouse_id": "wh-main",
+                "quantity": "7"
+              }
+            },
+            {
+              "quantity": null,
+              "warehouse": {
+                "warehouse_id": "wh-shop",
+                "quantity": "0"
+              }
+            }
+          ]
+        },
+        {
+          "product": {
+            "id": "p-lamp#c-red",
+            "barcode": null,
+            "article": null,
+            "name": "",
+            "base_unit": null,
+            "counterparty_product_id": null,
+            "group_ids": [],
+            "category_id": null,
+            "description": null,
+            "pictures": [],
+            "country": null,
+            "trademark": null,
+            "trademark_owner": null,
+            "manufacturer": null,
+            "property_values": [],
+            "tax_rates": [],
+            "excises": [],
+            "components": [],
+            "analogs": [],
+            "characteristics": [],
+            "requisites": [],
+            "status": null,
+            "deletion_mark": null,
+            "version": null,
+            "weight": null,
+            "extra": []
+          },
+          "prices": [],
+          "quantity": null,
+          "warehouse_stock": [],
+          "rests": [
+            {
+              "quantity": "3",
+              "warehouse": null
+            }
+          ]
+        }
+      ],
+      "signatories": [],
+      "changes_only": true,
+      "extra": []
+    },
+    "offer_package_changes": [],
+    "documents": [],
+    "counterparties": [],
+    "extra": []
+  },
+  "warnings": []
+}

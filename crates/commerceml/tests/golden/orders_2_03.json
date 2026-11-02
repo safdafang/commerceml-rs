@@ -1,0 +1,309 @@
+{
+  "info": {
+    "schema_version": "2.03",
+    "generated_at": "2026-11-02",
+    "classifier": null,
+    "catalog": null,
+    "offer_package": null,
+    "offer_package_changes": [],
+    "documents": [
+      {
+        "id": "20",
+        "number": "20",
+        "date": "2026-10-16",
+        "operation": "Заказ товара",
+        "role": "Продавец",
+        "currency": "RUB",
+        "rate": "1",
+        "amount": "2347.00",
+        "counterparties": [
+          {
+            "id": "1#user#Тестов Тест",
+            "name": "Тест Тестов",
+            "official_name": null,
+            "legal_address": null,
+            "inn": null,
+            "kpp": null,
+            "main_activity": null,
+            "egrpo": null,
+            "okved": null,
+            "okdp": null,
+            "okopf": null,
+            "okfs": null,
+            "okpo": null,
+            "registration_date": null,
+            "head": null,
+            "bank_accounts": [],
+            "full_name": "Тест Тестов",
+            "salutation": null,
+            "last_name": "Тестов",
+            "first_name": "Тест",
+            "middle_name": null,
+            "birth_date": null,
+            "birth_place": null,
+            "gender": null,
+            "identity_document": null,
+            "registration_address": {
+              "presentation": "000000, г. Примерный",
+              "comment": null,
+              "fields": [
+                {
+                  "kind": "Почтовый индекс",
+                  "value": "000000"
+                },
+                {
+                  "kind": "Улица",
+                  "value": "Тестовая"
+                }
+              ]
+            },
+            "organization": null,
+            "position": null,
+            "comment": null,
+            "address": null,
+            "contacts": [
+              {
+                "kind": "Почта",
+                "value": "buyer@example.invalid",
+                "comment": null
+              },
+              {
+                "kind": "Телефон рабочий",
+                "value": "+7 000 000-00-00",
+                "comment": "после 18:00"
+              }
+            ],
+            "representatives": [
+              {
+                "relation": "Контактное лицо",
+                "counterparty": {
+                  "id": "contact-1",
+                  "name": "Тест Тестов",
+                  "official_name": null,
+                  "legal_address": null,
+                  "inn": null,
+                  "kpp": null,
+                  "main_activity": null,
+                  "egrpo": null,
+                  "okved": null,
+                  "okdp": null,
+                  "okopf": null,
+                  "okfs": null,
+                  "okpo": null,
+                  "registration_date": null,
+                  "head": null,
+                  "bank_accounts": [],
+                  "full_name": null,
+                  "salutation": null,
+                  "last_name": null,
+                  "first_name": null,
+                  "middle_name": null,
+                  "birth_date": null,
+                  "birth_place": null,
+                  "gender": null,
+                  "identity_document": null,
+                  "registration_address": null,
+                  "organization": null,
+                  "position": null,
+                  "comment": null,
+                  "address": null,
+                  "contacts": [],
+                  "representatives": [],
+                  "role": null,
+                  "bank_account": null,
+                  "warehouse": null,
+                  "deletion_mark": null,
+                  "version": null,
+                  "extra": []
+                }
+              }
+            ],
+            "role": "Покупатель",
+            "bank_account": null,
+            "warehouse": null,
+            "deletion_mark": null,
+            "version": null,
+            "extra": []
+          }
+        ],
+        "time": "15:40:40",
+        "payment_due": null,
+        "comment": "",
+        "taxes": [],
+        "discounts": [],
+        "extra_charges": [],
+        "warehouses": [],
+        "items": [
+          {
+            "product": {
+              "id": "ORDER_DELIVERY",
+              "barcode": null,
+              "article": null,
+              "name": "Доставка заказа",
+              "base_unit": {
+                "code": "796",
+                "full_name": "Штука",
+                "international_code": "PCE",
+                "short_name": null,
+                "text": "шт",
+                "conversions": []
+              },
+              "counterparty_product_id": null,
+              "group_ids": [],
+              "category_id": null,
+              "description": null,
+              "pictures": [],
+              "country": null,
+              "trademark": null,
+              "trademark_owner": null,
+              "manufacturer": null,
+              "property_values": [],
+              "tax_rates": [],
+              "excises": [],
+              "components": [],
+              "analogs": [],
+              "characteristics": [],
+              "requisites": [
+                {
+                  "name": "ВидНоменклатуры",
+                  "values": [
+                    "Услуга"
+                  ]
+                },
+                {
+                  "name": "ТипНоменклатуры",
+                  "values": [
+                    "Услуга"
+                  ]
+                }
+              ],
+              "status": null,
+              "deletion_mark": null,
+              "version": null,
+              "weight": null,
+              "extra": []
+            },
+            "catalog_id": null,
+            "classifier_id": null,
+            "price_per_unit": "348.00",
+            "quantity": "1",
+            "amount": "348.00",
+            "unit": {
+              "unit": null,
+              "coefficient": null,
+              "extra_data": []
+            },
+            "country_of_origin": null,
+            "customs_declaration": null,
+            "taxes": [],
+            "discounts": [],
+            "extra_charges": [],
+            "additional_requisites": [],
+            "warehouses": []
+          },
+          {
+            "product": {
+              "id": "p-chair",
+              "barcode": null,
+              "article": null,
+              "name": "Стул складной",
+              "base_unit": {
+                "code": "796",
+                "full_name": "Штука",
+                "international_code": "PCE",
+                "short_name": null,
+                "text": "шт",
+                "conversions": []
+              },
+              "counterparty_product_id": null,
+              "group_ids": [],
+              "category_id": null,
+              "description": null,
+              "pictures": [],
+              "country": null,
+              "trademark": null,
+              "trademark_owner": null,
+              "manufacturer": null,
+              "property_values": [],
+              "tax_rates": [],
+              "excises": [],
+              "components": [],
+              "analogs": [],
+              "characteristics": [],
+              "requisites": [
+                {
+                  "name": "ВидНоменклатуры",
+                  "values": [
+                    "Товар"
+                  ]
+                }
+              ],
+              "status": null,
+              "deletion_mark": null,
+              "version": null,
+              "weight": null,
+              "extra": []
+            },
+            "catalog_id": "catalog-1",
+            "classifier_id": null,
+            "price_per_unit": "999.50",
+            "quantity": "2.00",
+            "amount": "1999.00",
+            "unit": {
+              "unit": null,
+              "coefficient": null,
+              "extra_data": []
+            },
+            "country_of_origin": null,
+            "customs_declaration": null,
+            "taxes": [],
+            "discounts": [
+              {
+                "name": "Скидка по купону",
+                "amount": "0",
+                "percent": null,
+                "included_in_amount": true,
+                "comment": null
+              }
+            ],
+            "extra_charges": [],
+            "additional_requisites": [],
+            "warehouses": []
+          }
+        ],
+        "requisites": [
+          {
+            "name": "Метод оплаты",
+            "values": [
+              "Наличный расчет"
+            ]
+          },
+          {
+            "name": "Заказ оплачен",
+            "values": [
+              "false"
+            ]
+          },
+          {
+            "name": "Статус заказа",
+            "values": [
+              "[N] Принят"
+            ]
+          }
+        ],
+        "signatories": [],
+        "payments": [],
+        "subordinate_documents": [],
+        "number_1c": null,
+        "date_1c": null,
+        "basis": null,
+        "deletion_mark": null,
+        "version": null,
+        "extra": []
+      }
+    ],
+    "counterparties": [],
+    "extra": []
+  },
+  "warnings": []
+}

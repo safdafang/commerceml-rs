@@ -1,0 +1,357 @@
+{
+  "info": {
+    "schema_version": "2.07",
+    "generated_at": "2026-11-02T09:16:00",
+    "classifier": {
+      "id": "11111111-0000-0000-0000-000000000001",
+      "name": "Классификатор (Тестовый магазин)",
+      "owner": {
+        "id": "22222222-0000-0000-0000-000000000001",
+        "name": "Тестовая организация",
+        "official_name": null,
+        "legal_address": null,
+        "inn": null,
+        "kpp": null,
+        "main_activity": null,
+        "egrpo": null,
+        "okved": null,
+        "okdp": null,
+        "okopf": null,
+        "okfs": null,
+        "okpo": null,
+        "registration_date": null,
+        "head": null,
+        "bank_accounts": [],
+        "full_name": null,
+        "salutation": null,
+        "last_name": null,
+        "first_name": null,
+        "middle_name": null,
+        "birth_date": null,
+        "birth_place": null,
+        "gender": null,
+        "identity_document": null,
+        "registration_address": null,
+        "organization": null,
+        "position": null,
+        "comment": null,
+        "address": null,
+        "contacts": [],
+        "representatives": [],
+        "role": null,
+        "bank_account": null,
+        "warehouse": null,
+        "deletion_mark": null,
+        "version": null,
+        "extra": []
+      },
+      "description": null,
+      "groups": [],
+      "properties": [],
+      "price_types": [],
+      "warehouses": [],
+      "units": [],
+      "categories": [],
+      "signatories": [],
+      "extra": []
+    },
+    "catalog": null,
+    "offer_package": {
+      "id": "catalog-1#",
+      "name": "Пакет предложений (Основной каталог)",
+      "catalog_id": "catalog-1",
+      "classifier_id": "11111111-0000-0000-0000-000000000001",
+      "valid_from": null,
+      "valid_to": null,
+      "description": null,
+      "owner": {
+        "id": "22222222-0000-0000-0000-000000000001",
+        "name": "Тестовая организация",
+        "official_name": null,
+        "legal_address": null,
+        "inn": null,
+        "kpp": null,
+        "main_activity": null,
+        "egrpo": null,
+        "okved": null,
+        "okdp": null,
+        "okopf": null,
+        "okfs": null,
+        "okpo": null,
+        "registration_date": null,
+        "head": null,
+        "bank_accounts": [],
+        "full_name": null,
+        "salutation": null,
+        "last_name": null,
+        "first_name": null,
+        "middle_name": null,
+        "birth_date": null,
+        "birth_place": null,
+        "gender": null,
+        "identity_document": null,
+        "registration_address": null,
+        "organization": null,
+        "position": null,
+        "comment": null,
+        "address": null,
+        "contacts": [],
+        "representatives": [],
+        "role": null,
+        "bank_account": null,
+        "warehouse": null,
+        "deletion_mark": null,
+        "version": null,
+        "extra": []
+      },
+      "price_types_classifier_id": null,
+      "price_types": [
+        {
+          "id": "price-retail",
+          "name": "Розничная",
+          "currency": "руб",
+          "description": null,
+          "taxes": [
+            {
+              "name": "НДС",
+              "included_in_amount": true,
+              "excise": null
+            }
+          ],
+          "deletion_mark": null,
+          "version": null,
+          "extra": []
+        },
+        {
+          "id": "price-wholesale",
+          "name": "Оптовая",
+          "currency": "руб",
+          "description": null,
+          "taxes": [],
+          "deletion_mark": null,
+          "version": null,
+          "extra": []
+        }
+      ],
+      "warehouses": [
+        {
+          "id": "wh-main",
+          "name": "Основной склад",
+          "comment": null,
+          "address": null,
+          "contacts": [],
+          "deletion_mark": null,
+          "version": null,
+          "extra": []
+        },
+        {
+          "id": "wh-shop",
+          "name": "Магазин",
+          "comment": null,
+          "address": null,
+          "contacts": [],
+          "deletion_mark": null,
+          "version": null,
+          "extra": []
+        }
+      ],
+      "property_values": [],
+      "offers": [
+        {
+          "product": {
+            "id": "p-chair",
+            "barcode": null,
+            "article": "CH-01",
+            "name": "Стул складной",
+            "base_unit": {
+              "code": "796",
+              "full_name": "Штука",
+              "international_code": "PCE",
+              "short_name": null,
+              "text": null,
+              "conversions": []
+            },
+            "counterparty_product_id": null,
+            "group_ids": [],
+            "category_id": null,
+            "description": null,
+            "pictures": [],
+            "country": null,
+            "trademark": null,
+            "trademark_owner": null,
+            "manufacturer": null,
+            "property_values": [],
+            "tax_rates": [],
+            "excises": [],
+            "components": [],
+            "analogs": [],
+            "characteristics": [],
+            "requisites": [],
+            "status": null,
+            "deletion_mark": null,
+            "version": null,
+            "weight": null,
+            "extra": []
+          },
+          "prices": [
+            {
+              "presentation": "1 499 руб. за шт",
+              "price_type_id": "price-retail",
+              "price_per_unit": "1499.00",
+              "currency": "руб",
+              "unit": {
+                "unit": "шт",
+                "coefficient": "1",
+                "extra_data": []
+              },
+              "min_quantity": null,
+              "catalog_id": null
+            },
+            {
+              "presentation": null,
+              "price_type_id": "price-wholesale",
+              "price_per_unit": "1200.50",
+              "currency": "руб",
+              "unit": {
+                "unit": null,
+                "coefficient": null,
+                "extra_data": []
+              },
+              "min_quantity": "10",
+              "catalog_id": null
+            }
+          ],
+          "quantity": "12",
+          "warehouse_stock": [
+            {
+              "warehouse_id": "wh-main",
+              "quantity": "10"
+            },
+            {
+              "warehouse_id": "wh-shop",
+              "quantity": "2"
+            }
+          ],
+          "rests": []
+        },
+        {
+          "product": {
+            "id": "p-lamp#c-red",
+            "barcode": null,
+            "article": null,
+            "name": "Лампа настольная (красная)",
+            "base_unit": null,
+            "counterparty_product_id": null,
+            "group_ids": [],
+            "category_id": null,
+            "description": null,
+            "pictures": [],
+            "country": null,
+            "trademark": null,
+            "trademark_owner": null,
+            "manufacturer": null,
+            "property_values": [],
+            "tax_rates": [],
+            "excises": [],
+            "components": [],
+            "analogs": [],
+            "characteristics": [
+              {
+                "id": null,
+                "name": "Цвет",
+                "value": "Красный"
+              }
+            ],
+            "requisites": [],
+            "status": null,
+            "deletion_mark": null,
+            "version": null,
+            "weight": null,
+            "extra": []
+          },
+          "prices": [
+            {
+              "presentation": null,
+              "price_type_id": "price-retail",
+              "price_per_unit": "899",
+              "currency": null,
+              "unit": {
+                "unit": null,
+                "coefficient": null,
+                "extra_data": []
+              },
+              "min_quantity": null,
+              "catalog_id": null
+            }
+          ],
+          "quantity": "-1",
+          "warehouse_stock": [
+            {
+              "warehouse_id": "wh-main",
+              "quantity": "-1"
+            }
+          ],
+          "rests": []
+        },
+        {
+          "product": {
+            "id": "p-lamp#",
+            "barcode": null,
+            "article": null,
+            "name": "Лампа настольная",
+            "base_unit": null,
+            "counterparty_product_id": null,
+            "group_ids": [],
+            "category_id": null,
+            "description": null,
+            "pictures": [],
+            "country": null,
+            "trademark": null,
+            "trademark_owner": null,
+            "manufacturer": null,
+            "property_values": [],
+            "tax_rates": [],
+            "excises": [],
+            "components": [],
+            "analogs": [],
+            "characteristics": [],
+            "requisites": [],
+            "status": null,
+            "deletion_mark": null,
+            "version": null,
+            "weight": null,
+            "extra": []
+          },
+          "prices": [
+            {
+              "presentation": null,
+              "price_type_id": "price-retail",
+              "price_per_unit": null,
+              "currency": null,
+              "unit": {
+                "unit": null,
+                "coefficient": null,
+                "extra_data": []
+              },
+              "min_quantity": null,
+              "catalog_id": null
+            }
+          ],
+          "quantity": null,
+          "warehouse_stock": [],
+          "rests": []
+        }
+      ],
+      "signatories": [],
+      "changes_only": false,
+      "extra": []
+    },
+    "offer_package_changes": [],
+    "documents": [],
+    "counterparties": [],
+    "extra": []
+  },
+  "warnings": [
+    "invalid value \"не число\" in <ЦенаЗаЕдиницу> at КоммерческаяИнформация/ПакетПредложений/Предложения/Предложение/Цены/Цена/ЦенаЗаЕдиницу (line 97, column 7)"
+  ]
+}

@@ -1,0 +1,523 @@
+{
+  "info": {
+    "schema_version": "2.10",
+    "generated_at": "2026-11-02T09:15:00",
+    "classifier": {
+      "id": "11111111-0000-0000-0000-000000000001",
+      "name": "Классификатор (Тестовый магазин)",
+      "owner": {
+        "id": "22222222-0000-0000-0000-000000000001",
+        "name": "Тестовая организация",
+        "official_name": "ООО \"Тестовая организация\"",
+        "legal_address": null,
+        "inn": "0000000000",
+        "kpp": "000000000",
+        "main_activity": null,
+        "egrpo": null,
+        "okved": null,
+        "okdp": null,
+        "okopf": null,
+        "okfs": null,
+        "okpo": "00000000",
+        "registration_date": null,
+        "head": null,
+        "bank_accounts": [],
+        "full_name": null,
+        "salutation": null,
+        "last_name": null,
+        "first_name": null,
+        "middle_name": null,
+        "birth_date": null,
+        "birth_place": null,
+        "gender": null,
+        "identity_document": null,
+        "registration_address": null,
+        "organization": null,
+        "position": null,
+        "comment": null,
+        "address": {
+          "presentation": "000000, г. Примерный, ул. Тестовая, д. 1",
+          "comment": null,
+          "fields": []
+        },
+        "contacts": [],
+        "representatives": [],
+        "role": null,
+        "bank_account": null,
+        "warehouse": null,
+        "deletion_mark": null,
+        "version": null,
+        "extra": []
+      },
+      "description": null,
+      "groups": [
+        {
+          "id": "g-furniture",
+          "name": "Мебель",
+          "description": null,
+          "properties": [],
+          "groups": [
+            {
+              "id": "g-chairs",
+              "name": "Стулья & табуреты",
+              "description": null,
+              "properties": [],
+              "groups": [],
+              "deletion_mark": null,
+              "version": null,
+              "extra": []
+            },
+            {
+              "id": "g-tables",
+              "name": "Столы",
+              "description": null,
+              "properties": [],
+              "groups": [],
+              "deletion_mark": false,
+              "version": null,
+              "extra": []
+            }
+          ],
+          "deletion_mark": null,
+          "version": null,
+          "extra": []
+        },
+        {
+          "id": "g-light",
+          "name": "Освещение",
+          "description": "Лампы и светильники",
+          "properties": [],
+          "groups": [],
+          "deletion_mark": null,
+          "version": null,
+          "extra": []
+        }
+      ],
+      "properties": [
+        {
+          "id": "prop-color",
+          "name": "Цвет",
+          "description": null,
+          "required_for": null,
+          "multiple": null,
+          "value_type": "Справочник",
+          "values": [],
+          "dictionary": [
+            {
+              "value_id": "color-red",
+              "value": "Красный",
+              "picture": null
+            },
+            {
+              "value_id": "color-oak",
+              "value": "Дуб",
+              "picture": null
+            }
+          ],
+          "for_products": true,
+          "for_offers": null,
+          "for_documents": null,
+          "external": null,
+          "deletion_mark": null,
+          "version": null,
+          "extra": []
+        },
+        {
+          "id": "prop-weight",
+          "name": "Вес, кг",
+          "description": null,
+          "required_for": "Для каталога",
+          "multiple": false,
+          "value_type": "Число",
+          "values": [],
+          "dictionary": [],
+          "for_products": null,
+          "for_offers": null,
+          "for_documents": null,
+          "external": null,
+          "deletion_mark": null,
+          "version": null,
+          "extra": []
+        }
+      ],
+      "price_types": [
+        {
+          "id": "price-retail",
+          "name": "Розничная",
+          "currency": "RUB",
+          "description": null,
+          "taxes": [
+            {
+              "name": "НДС",
+              "included_in_amount": true,
+              "excise": false
+            }
+          ],
+          "deletion_mark": null,
+          "version": null,
+          "extra": []
+        }
+      ],
+      "warehouses": [
+        {
+          "id": "wh-main",
+          "name": "Основной склад",
+          "comment": null,
+          "address": null,
+          "contacts": [],
+          "deletion_mark": null,
+          "version": null,
+          "extra": []
+        }
+      ],
+      "units": [
+        {
+          "id": null,
+          "code": "796",
+          "full_name": "Штука",
+          "short_name": null,
+          "international_code": "PCE",
+          "deletion_mark": null,
+          "extra": []
+        }
+      ],
+      "categories": [
+        {
+          "id": "g-furniture",
+          "name": "Мебель",
+          "description": null,
+          "deletion_mark": null,
+          "extra": []
+        }
+      ],
+      "signatories": [],
+      "extra": []
+    },
+    "catalog": {
+      "id": "catalog-1",
+      "classifier_id": "11111111-0000-0000-0000-000000000001",
+      "name": "Основной каталог",
+      "owner": {
+        "id": "22222222-0000-0000-0000-000000000001",
+        "name": "Тестовая организация",
+        "official_name": null,
+        "legal_address": null,
+        "inn": null,
+        "kpp": null,
+        "main_activity": null,
+        "egrpo": null,
+        "okved": null,
+        "okdp": null,
+        "okopf": null,
+        "okfs": null,
+        "okpo": null,
+        "registration_date": null,
+        "head": null,
+        "bank_accounts": [],
+        "full_name": null,
+        "salutation": null,
+        "last_name": null,
+        "first_name": null,
+        "middle_name": null,
+        "birth_date": null,
+        "birth_place": null,
+        "gender": null,
+        "identity_document": null,
+        "registration_address": null,
+        "organization": null,
+        "position": null,
+        "comment": null,
+        "address": null,
+        "contacts": [],
+        "representatives": [],
+        "role": null,
+        "bank_account": null,
+        "warehouse": null,
+        "deletion_mark": null,
+        "version": null,
+        "extra": []
+      },
+      "products": [
+        {
+          "id": "p-chair",
+          "barcode": "4600000000017",
+          "article": "CH-01",
+          "name": "Стул складной   ",
+          "base_unit": {
+            "code": "796",
+            "full_name": "Штука",
+            "international_code": "PCE",
+            "short_name": null,
+            "text": null,
+            "conversions": [
+              {
+                "unit": "796",
+                "coefficient": "1",
+                "extra_data": []
+              }
+            ]
+          },
+          "counterparty_product_id": null,
+          "group_ids": [
+            "g-chairs"
+          ],
+          "category_id": "g-furniture",
+          "description": "Лёгкий стул.\nВторая строка описания с символами <>&\"'.",
+          "pictures": [
+            "import_files/aa/p-chair_1.jpg",
+            "import_files/aa/p-chair_2.jpg"
+          ],
+          "country": null,
+          "trademark": null,
+          "trademark_owner": null,
+          "manufacturer": {
+            "id": "maker-1",
+            "name": "Фабрика «Тест»",
+            "official_name": null,
+            "legal_address": null,
+            "inn": null,
+            "kpp": null,
+            "main_activity": null,
+            "egrpo": null,
+            "okved": null,
+            "okdp": null,
+            "okopf": null,
+            "okfs": null,
+            "okpo": null,
+            "registration_date": null,
+            "head": null,
+            "bank_accounts": [],
+            "full_name": null,
+            "salutation": null,
+            "last_name": null,
+            "first_name": null,
+            "middle_name": null,
+            "birth_date": null,
+            "birth_place": null,
+            "gender": null,
+            "identity_document": null,
+            "registration_address": null,
+            "organization": null,
+            "position": null,
+            "comment": null,
+            "address": null,
+            "contacts": [],
+            "representatives": [],
+            "role": null,
+            "bank_account": null,
+            "warehouse": null,
+            "deletion_mark": null,
+            "version": null,
+            "extra": []
+          },
+          "property_values": [
+            {
+              "id": "prop-color",
+              "name": null,
+              "values": [
+                "color-oak"
+              ]
+            },
+            {
+              "id": "prop-weight",
+              "name": null,
+              "values": [
+                "3,5"
+              ]
+            }
+          ],
+          "tax_rates": [
+            {
+              "name": "НДС",
+              "rate": "20"
+            }
+          ],
+          "excises": [],
+          "components": [],
+          "analogs": [],
+          "characteristics": [
+            {
+              "id": null,
+              "name": "Материал",
+              "value": "Дерево"
+            }
+          ],
+          "requisites": [
+            {
+              "name": "ВидНоменклатуры",
+              "values": [
+                "Товар"
+              ]
+            },
+            {
+              "name": "ОписаниеФайла",
+              "values": [
+                "import_files/aa/p-chair_1.jpg#Фото спереди"
+              ]
+            }
+          ],
+          "status": "Изменен",
+          "deletion_mark": null,
+          "version": null,
+          "weight": "3.500",
+          "extra": [
+            {
+              "name": "Бренд",
+              "xml": "<Бренд>ТестБренд</Бренд>"
+            }
+          ]
+        },
+        {
+          "id": "p-kit",
+          "barcode": null,
+          "article": "",
+          "name": "Комплект мебели",
+          "base_unit": {
+            "code": "704",
+            "full_name": "Набор",
+            "international_code": "SET",
+            "short_name": null,
+            "text": null,
+            "conversions": []
+          },
+          "counterparty_product_id": null,
+          "group_ids": [
+            "g-furniture"
+          ],
+          "category_id": null,
+          "description": "",
+          "pictures": [],
+          "country": "РОССИЯ",
+          "trademark": "Тест",
+          "trademark_owner": null,
+          "manufacturer": null,
+          "property_values": [],
+          "tax_rates": [
+            {
+              "name": "НДС",
+              "rate": "Без налога"
+            }
+          ],
+          "excises": [],
+          "components": [
+            {
+              "product": {
+                "id": "p-chair",
+                "barcode": null,
+                "article": null,
+                "name": "Стул складной",
+                "base_unit": null,
+                "counterparty_product_id": null,
+                "group_ids": [],
+                "category_id": null,
+                "description": null,
+                "pictures": [],
+                "country": null,
+                "trademark": null,
+                "trademark_owner": null,
+                "manufacturer": null,
+                "property_values": [],
+                "tax_rates": [],
+                "excises": [],
+                "components": [],
+                "analogs": [],
+                "characteristics": [],
+                "requisites": [],
+                "status": null,
+                "deletion_mark": null,
+                "version": null,
+                "weight": null,
+                "extra": []
+              },
+              "catalog_id": null,
+              "classifier_id": null,
+              "quantity": "4"
+            }
+          ],
+          "analogs": [
+            {
+              "product": {
+                "id": "p-other-kit",
+                "barcode": null,
+                "article": null,
+                "name": "Другой комплект",
+                "base_unit": null,
+                "counterparty_product_id": null,
+                "group_ids": [],
+                "category_id": null,
+                "description": null,
+                "pictures": [],
+                "country": null,
+                "trademark": null,
+                "trademark_owner": null,
+                "manufacturer": null,
+                "property_values": [],
+                "tax_rates": [],
+                "excises": [],
+                "components": [],
+                "analogs": [],
+                "characteristics": [],
+                "requisites": [],
+                "status": null,
+                "deletion_mark": null,
+                "version": null,
+                "weight": null,
+                "extra": []
+              },
+              "catalog_id": "catalog-2",
+              "classifier_id": null,
+              "quantity": null
+            }
+          ],
+          "characteristics": [],
+          "requisites": [],
+          "status": null,
+          "deletion_mark": null,
+          "version": null,
+          "weight": null,
+          "extra": []
+        },
+        {
+          "id": "p-removed",
+          "barcode": null,
+          "article": null,
+          "name": "Снятый с продажи товар",
+          "base_unit": null,
+          "counterparty_product_id": null,
+          "group_ids": [],
+          "category_id": null,
+          "description": null,
+          "pictures": [],
+          "country": null,
+          "trademark": null,
+          "trademark_owner": null,
+          "manufacturer": null,
+          "property_values": [],
+          "tax_rates": [],
+          "excises": [],
+          "components": [],
+          "analogs": [],
+          "characteristics": [],
+          "requisites": [],
+          "status": "Удален",
+          "deletion_mark": true,
+          "version": null,
+          "weight": null,
+          "extra": []
+        }
+      ],
+      "description": null,
+      "signatories": [],
+      "changes_only": false,
+      "extra": []
+    },
+    "offer_package": null,
+    "offer_package_changes": [],
+    "documents": [],
+    "counterparties": [],
+    "extra": []
+  },
+  "warnings": [
+    "unknown element <Бренд> at КоммерческаяИнформация/Каталог/Товары/Товар/Бренд (line 162, column 5)"
+  ]
+}

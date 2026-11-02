@@ -32,6 +32,10 @@ proptest = "1.12"
 criterion = { version = "0.8", default-features = false, features = ["cargo_bench_support"] }
 serde_json = { workspace = true }
 
+[[test]]
+name = "golden"
+required-features = ["serde"]
+
 [package.metadata.docs.rs]
 all-features = true
 rustdoc-args = ["--cfg", "docsrs"]
