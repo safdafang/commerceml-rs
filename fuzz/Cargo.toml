@@ -1,0 +1,36 @@
+[package]
+name = "commerceml-fuzz"
+version = "0.0.0"
+publish = false
+edition = "2024"
+
+[package.metadata]
+cargo-fuzz = true
+
+[dependencies]
+libfuzzer-sys = "0.4"
+commerceml = { path = "../crates/commerceml" }
+
+# Not part of the main workspace: needs nightly and libFuzzer.
+[workspace]
+
+[[bin]]
+name = "parse_slice"
+path = "fuzz_targets/parse_slice.rs"
+test = false
+doc = false
+bench = false
+
+[[bin]]
+name = "stream"
+path = "fuzz_targets/stream.rs"
+test = false
+doc = false
+bench = false
+
+[[bin]]
+name = "roundtrip"
+path = "fuzz_targets/roundtrip.rs"
+test = false
+doc = false
+bench = false
