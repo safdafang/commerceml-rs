@@ -598,7 +598,7 @@ mod tests {
         let big = r.next_child(&root).unwrap().unwrap();
         let mut extra = Vec::new();
         r.unknown(big, Some(&mut extra)).unwrap();
-        assert!(extra.is_empty());
+        assert_eq!(extra, []);
         assert!(r.next_child(&root).unwrap().is_none());
     }
 }

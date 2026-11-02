@@ -23,7 +23,7 @@ fn fixtures_match_golden_files() {
         .filter(|p| p.extension().is_some_and(|e| e == "xml"))
         .collect();
     fixtures.sort();
-    assert!(!fixtures.is_empty());
+    assert_ne!(fixtures.len(), 0);
     let mut mismatched = Vec::new();
     for path in fixtures {
         let parsed = commerceml::from_slice(&std::fs::read(&path).unwrap()).unwrap();

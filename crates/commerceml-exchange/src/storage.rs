@@ -279,7 +279,7 @@ mod tests {
         assert_eq!(s.list("s1").unwrap(), ["a/b.xml"]);
         s.clear("s1").unwrap();
         s.clear("s1").unwrap();
-        assert!(s.list("s1").unwrap().is_empty());
+        assert_eq!(s.list("s1").unwrap().len(), 0);
         assert_eq!(s.list("s2").unwrap(), ["c.xml"]);
         assert!(s.append("s1", "../x", b"").is_err());
         assert!(s.append("../s", "x", b"").is_err());

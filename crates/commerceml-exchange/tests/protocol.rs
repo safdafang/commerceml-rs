@@ -431,7 +431,7 @@ async fn defaults_of_a_minimal_handler() {
     let mut c = Client { app, cookie: None };
     c.login("sale").await;
     let r = c.get("type=sale&mode=query").await;
-    assert!(commerceml::from_slice(&r.body).unwrap().info.documents.is_empty());
+    assert_eq!(commerceml::from_slice(&r.body).unwrap().info.documents.len(), 0);
     c.call("type=catalog&mode=file&filename=a.xml", None, b"<a/>".to_vec())
         .await;
     let r = c.get("type=catalog&mode=import&filename=a.xml").await;

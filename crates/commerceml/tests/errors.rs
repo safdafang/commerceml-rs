@@ -49,7 +49,7 @@ fn self_closing_root() {
     )
     .unwrap();
     assert!(parsed.info.catalog.is_none());
-    assert!(parsed.warnings.is_empty());
+    assert_eq!(parsed.warnings.len(), 0);
 }
 
 #[test]
@@ -99,8 +99,8 @@ fn unknown_elements_can_be_dropped() {
         .keep_unknown(false)
         .parse_str(xml)
         .unwrap();
-    assert!(dropped.info.products()[0].extra.is_empty());
-    assert!(dropped.info.extra.is_empty());
+    assert_eq!(dropped.info.products()[0].extra.len(), 0);
+    assert_eq!(dropped.info.extra.len(), 0);
     assert_eq!(dropped.warnings.len(), 2);
 }
 

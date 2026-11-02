@@ -48,11 +48,12 @@ fn header_checks() {
         codes("<КоммерческаяИнформация/>"),
         [(Severity::Error, IssueCode::MissingField)]
     );
-    assert!(
+    assert_eq!(
         codes(
             "<КоммерческаяИнформация ВерсияСхемы=\"2.04\" ДатаФормирования=\"2026-11-02T10:00:00+03:00\"/>"
         )
-        .is_empty()
+        .len(),
+        0
     );
 }
 

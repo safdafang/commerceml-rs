@@ -103,7 +103,7 @@ mod tests {
     fn accessors_on_empty() {
         let info = CommercialInfo::new("2026-01-01T00:00:00");
         assert_eq!(info.schema_version, "2.10");
-        assert!(info.products().is_empty());
-        assert!(info.offers().is_empty());
+        assert_eq!(info.products(), []);
+        assert_eq!(info.offers(), []);
     }
 }
