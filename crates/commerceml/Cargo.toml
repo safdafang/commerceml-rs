@@ -40,6 +40,10 @@ required-features = ["serde"]
 name = "memory"
 required-features = ["synth"]
 
+[[example]]
+name = "generate"
+required-features = ["synth"]
+
 [[bench]]
 name = "parse"
 harness = false
