@@ -36,6 +36,15 @@ serde_json = { workspace = true }
 name = "golden"
 required-features = ["serde"]
 
+[[test]]
+name = "memory"
+required-features = ["synth"]
+
+[[bench]]
+name = "parse"
+harness = false
+required-features = ["synth"]
+
 [package.metadata.docs.rs]
 all-features = true
 rustdoc-args = ["--cfg", "docsrs"]
