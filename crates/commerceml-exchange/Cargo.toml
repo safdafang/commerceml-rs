@@ -1,0 +1,52 @@
+[package]
+name = "commerceml-exchange"
+description = "Server side of the 1C:Enterprise ↔ website exchange protocol (CommerceML 2) with an axum adapter"
+readme = "README.md"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+keywords = ["commerceml", "1c", "exchange", "axum", "ecommerce"]
+categories = ["web-programming::http-server", "parser-implementations"]
+
+[features]
+default = ["axum"]
+## The axum router (`commerceml_exchange::axum`). Without it only the
+## framework-independent protocol core is built.
+axum = ["dep:axum"]
+
+[dependencies]
+commerceml = { workspace = true }
+# HTTP router and body extraction for the ready-made adapter.
+axum = { version = "0.8", default-features = false, features = ["tokio", "http1", "query"], optional = true }
+# Blocking storage and zip work runs on tokio's blocking pool.
+tokio = { version = "1.47", features = ["rt", "sync", "macros"] }
+# Request bodies without copying.
+bytes = "1"
+# Unpacking the archives 1C sends when zip=yes.
+zip = { version = "9", default-features = false, features = ["deflate"] }
+# windows-1251 file names in query strings (already used by the core crate).
+encoding_rs = { workspace = true }
+# Decoding HTTP Basic credentials.
+base64 = "0.23"
+# Unpredictable session tokens.
+getrandom = "0.4"
+thiserror = { workspace = true }
+
+[dev-dependencies]
+tokio = { version = "1.47", features = ["rt-multi-thread", "macros", "net"] }
+tower = { version = "0.5", features = ["util"] }
+http-body-util = "0.1"
+
+[[example]]
+name = "server"
+required-features = ["axum"]
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
+
+[lints]
+workspace = true

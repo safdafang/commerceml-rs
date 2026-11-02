@@ -1,6 +1,6 @@
 [workspace]
 resolver = "3"
-members = ["crates/commerceml", "crates/commerceml-cli"]
+members = ["crates/commerceml", "crates/commerceml-exchange", "crates/commerceml-cli"]
 exclude = ["fuzz"]
 
 [workspace.package]
