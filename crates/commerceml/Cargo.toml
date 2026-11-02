@@ -1,0 +1,40 @@
+[package]
+name = "commerceml"
+description = "Streaming parser and writer for CommerceML 2 (1C:Enterprise ↔ website data exchange)"
+readme = "README.md"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+keywords.workspace = true
+categories.workspace = true
+
+[features]
+default = []
+## Derive `serde::Serialize`/`Deserialize` for the data model.
+serde = ["dep:serde"]
+## Deterministic generator of synthetic exports (used by benchmarks and the CLI).
+synth = []
+
+[dependencies]
+# XML pull parser and writer; the core of both parsing modes.
+quick-xml = { workspace = true }
+# windows-1251 (and other legacy encodings) <-> UTF-8 transcoding.
+encoding_rs = { workspace = true }
+# Error type derivation.
+thiserror = { workspace = true }
+serde = { workspace = true, optional = true }
+
+[dev-dependencies]
+proptest = "1.12"
+criterion = { version = "0.8", default-features = false, features = ["cargo_bench_support"] }
+serde_json = { workspace = true }
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
+
+[lints]
+workspace = true
