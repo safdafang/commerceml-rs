@@ -1,0 +1,46 @@
+name: Bug report
+description: Something is parsed, written or exchanged incorrectly
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report. **Do not paste real customer or company data.**
+        Replace names, INN/KPP, addresses and prices with made-up values.
+  - type: dropdown
+    id: crate
+    attributes:
+      label: Crate
+      options: [commerceml (core), commerceml-exchange (server), commerceml-cli]
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Crate version
+      placeholder: "0.1.0"
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Where the file comes from
+      description: 1C configuration and version, ВерсияСхемы, CMS
+      placeholder: "УТ 11.5, ВерсияСхемы 2.10"
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, and what you expected
+    validations:
+      required: true
+  - type: textarea
+    id: sample
+    attributes:
+      label: Minimal sanitized sample
+      description: The smallest XML fragment that shows the problem.
+      render: xml
+  - type: textarea
+    id: output
+    attributes:
+      label: Output of `commerceml validate --format json`
+      render: json

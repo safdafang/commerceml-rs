@@ -1,0 +1,19 @@
+name: Feature request
+description: Support a new element, configuration or protocol step
+labels: [enhancement]
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: What do you need?
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Where is it described or seen?
+      description: Link to the standard, 1C or Bitrix documentation, or a sanitized sample.
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Workarounds you use today
