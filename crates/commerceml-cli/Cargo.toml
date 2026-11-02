@@ -1,0 +1,30 @@
+[package]
+name = "commerceml-cli"
+description = "Validate, inspect, convert and diff CommerceML 2 exports from 1C:Enterprise"
+readme = "README.md"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+keywords = ["commerceml", "1c", "xml", "cli", "converter"]
+categories = ["command-line-utilities", "parser-implementations"]
+
+[[bin]]
+name = "commerceml"
+path = "src/main.rs"
+
+[dependencies]
+commerceml = { workspace = true, features = ["serde", "synth"] }
+# Argument parsing.
+clap = { version = "4.6", features = ["derive"] }
+# JSON output for `convert` and `--format json`; `preserve_order` keeps the
+# field order of the data model instead of sorting keys.
+serde_json = { workspace = true, features = ["preserve_order"] }
+serde = { workspace = true }
+# Error context in a binary.
+anyhow = "1"
+
+[lints]
+workspace = true
